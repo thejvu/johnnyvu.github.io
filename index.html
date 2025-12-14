@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johnny Vu - CS ePortfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .intro {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        
+        .intro h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        
+        .section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+        
+        .artifact {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #667eea;
+            border-radius: 4px;
+        }
+        
+        .artifact h3 {
+            color: #764ba2;
+            margin-bottom: 0.5rem;
+        }
+        
+        .artifact ul {
+            margin-left: 2rem;
+            margin-top: 0.5rem;
+        }
+        
+        .artifact li {
+            margin-bottom: 0.3rem;
+        }
+        
+        .links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #764ba2;
+        }
+        
+        .btn-secondary {
+            background: #48bb78;
+        }
+        
+        .btn-secondary:hover {
+            background: #38a169;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #333;
+            color: white;
+            margin-top: 3rem;
+        }
+        
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .skill-card {
+            background: #f9f9f9;
+            padding: 1rem;
+            border-radius: 4px;
+            border-left: 3px solid #667eea;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Johnny Vu</h1>
+        <p>Computer Science ePortfolio | SNHU CS 499 Capstone</p>
+    </header>
+
+    <div class="container">
+        <!-- Professional Self-Assessment -->
+        <div class="intro">
+            <h2>Professional Self-Assessment</h2>
+            <p>
+                As a Design Technology Coordinator transitioning into software engineering, I bring a unique combination of 
+                architectural domain expertise and comprehensive computer science training. This ePortfolio showcases my growth 
+                through the SNHU Computer Science program, demonstrating capabilities in software engineering, algorithms, 
+                database design, and security—all applied to the Travlr Getaways full-stack application.
+            </p>
+            <p style="margin-top: 1rem;">
+                My goal is to work for companies like Autodesk or Bentley Systems on next-generation building information modeling 
+                platforms, leveraging my expertise in both the AEC industry and modern software development.
+            </p>
+            <div class="links">
+                <a href="narratives/CS_499_Professional_Self_Assessment_Johnny_Vu.docx" class="btn" download>
+                    📄 Read Full Self-Assessment
+                </a>
+            </div>
+        </div>
+
+        <!-- Code Review -->
+        <div class="section">
+            <h2>Code Review</h2>
+            <p>
+                A comprehensive 30-minute code review walking through the original Travlr Getaways application, analyzing areas 
+                for improvement, and outlining enhancement plans across three categories: Software Engineering, Algorithms, and Databases.
+            </p>
+            <div class="links">
+                <a href="YOUR_CODE_REVIEW_VIDEO_LINK" class="btn btn-secondary" target="_blank">
+                    🎥 Watch Code Review
+                </a>
+            </div>
+        </div>
+
+        <!-- Enhancement Categories -->
+        <div class="section">
+            <h2>Enhanced Artifacts</h2>
+            
+            <div class="artifact">
+                <h3>Milestone Two: Software Engineering & Design</h3>
+                <p><strong>Enhancement Focus:</strong> Production-ready security, logging, and error handling</p>
+                <ul>
+                    <li>Helmet.js security headers (XSS, clickjacking, MIME sniffing protection)</li>
+                    <li>Winston logging framework with structured logs and file storage</li>
+                    <li>Centralized error handling with custom error classes</li>
+                    <li>Comprehensive input validation using express-validator</li>
+                </ul>
+                <div class="links">
+                    <a href="narratives/CS_499_Milestone_Two_Narrative_Johnny_Vu.docx" class="btn" download>
+                        📄 Narrative
+                    </a>
+                    <a href="code/enhanced/" class="btn btn-secondary">
+                        💻 View Code
+                    </a>
+                </div>
+            </div>
+
+            <div class="artifact">
+                <h3>Milestone Three: Algorithms & Data Structures</h3>
+                <p><strong>Enhancement Focus:</strong> Search, recommendations, and performance optimization</p>
+                <ul>
+                    <li>MongoDB indexes (single-field, compound, text search)</li>
+                    <li>Advanced search system with filtering and dynamic sorting</li>
+                    <li>Recommendation engine using multi-factor similarity scoring</li>
+                    <li>In-memory caching with automatic invalidation (5-minute TTL)</li>
+                </ul>
+                <div class="links">
+                    <a href="narratives/CS_499_Milestone_Three_Narrative_Johnny_Vu.docx" class="btn" download>
+                        📄 Narrative
+                    </a>
+                    <a href="code/enhanced/" class="btn btn-secondary">
+                        💻 View Code
+                    </a>
+                </div>
+            </div>
+
+            <div class="artifact">
+                <h3>Milestone Four: Databases</h3>
+                <p><strong>Enhancement Focus:</strong> Advanced schema design and analytics</p>
+                <ul>
+                    <li>Reviews schema with embedded documents and validation</li>
+                    <li>Automatic rating calculation using pre-save hooks</li>
+                    <li>MongoDB aggregation pipelines for statistics and analytics</li>
+                    <li>Comprehensive Mongoose schema validation</li>
+                </ul>
+                <div class="links">
+                    <a href="narratives/CS_499_Milestone_Four_Narrative_Johnny_Vu.docx" class="btn" download>
+                        📄 Narrative
+                    </a>
+                    <a href="code/enhanced/" class="btn btn-secondary">
+                        💻 View Code
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Demonstrated -->
+        <div class="section">
+            <h2>Skills & Technologies</h2>
+            <div class="skills">
+                <div class="skill-card">
+                    <strong>Full-Stack Development</strong>
+                    <p>MEAN Stack (MongoDB, Express, Angular, Node.js)</p>
+                </div>
+                <div class="skill-card">
+                    <strong>Security</strong>
+                    <p>Helmet.js, Input validation, Error handling, Defense-in-depth</p>
+                </div>
+                <div class="skill-card">
+                    <strong>Algorithms</strong>
+                    <p>Search algorithms, Recommendation engines, Caching strategies</p>
+                </div>
+                <div class="skill-card">
+                    <strong>Database Design</strong>
+                    <p>MongoDB, Mongoose, Aggregation pipelines, Schema validation</p>
+                </div>
+                <div class="skill-card">
+                    <strong>DevOps</strong>
+                    <p>Winston logging, Error monitoring, Performance optimization</p>
+                </div>
+                <div class="skill-card">
+                    <strong>Best Practices</strong>
+                    <p>RESTful APIs, Git version control, Code documentation</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course Outcomes -->
+        <div class="section">
+            <h2>Course Outcomes Achieved</h2>
+            <ul style="margin-left: 2rem;">
+                <li><strong>Collaboration:</strong> RESTful API design enabling team development</li>
+                <li><strong>Communication:</strong> Technical narratives, clear error messages, comprehensive logging</li>
+                <li><strong>Algorithms:</strong> Search optimization, similarity scoring, caching strategies</li>
+                <li><strong>Software Engineering:</strong> Production-ready security, logging, validation</li>
+                <li><strong>Security Mindset:</strong> Defense-in-depth, input validation, secure error handling</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Johnny Vu | SNHU Computer Science Capstone</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+            Contact: <a href="mailto:your.email@example.com" style="color: #667eea;">your.email@example.com</a>
+        </p>
+    </footer>
+</body>
+</html>
